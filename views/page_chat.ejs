@@ -1,0 +1,37 @@
+<% include common_header %>
+
+<% include common_menu %>
+
+<div class="form-search-voc w3-padding">
+    <div class="w3-padding">
+        <form method="POST" action="/">
+            <h2></h2>
+            <br>
+            <input type="text" name="sentence" id="sentence" placeholder="Parlez à Harry !" value="Je mange une pomme"/>
+            <button type="submit"> <i class="fa fa-comment"></i> </button>
+        </form>
+    </div>
+    
+</div>
+
+    <div class="w3-padding">
+        <p>
+        <%if(status === "ok"){%>
+            <table>
+                <tr>
+                <% var nbS = info.length; for(var indexS=0; indexS<nbS; indexS++) { %>
+                <tr>
+                    <% var nbW = info[indexS].length; for(var indexW=0; indexW<nbW; indexW++) { %>
+                        <td> <%= info[indexS][indexW] %></%></td>
+                    <% } %> 
+                </tr>
+                <% } %>    
+                </tr>
+            </table>
+       
+        <%}%>
+        
+        </p>
+    </div>
+
+<% include common_footer %>

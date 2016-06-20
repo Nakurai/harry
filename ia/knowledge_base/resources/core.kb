@@ -1,0 +1,21 @@
+// c = collection
+// p = predicate
+// i = instance
+// f = function
+// v = value (string, number)
+c#thing p#has   c#name
+c#comment   p#is  v#string
+c#uri   p#is  v#string
+c#thing c#comment   Root. Big bang. Alpha. Origin. Well, kind of god, I guess ? More seriously, just a starting point for the ontology
+c#concrete  p#is    c#thing
+c#concrete  c#comment   everything physical in this world
+c#abstract  p#is    c#thing
+c#abstract  c#comment   everything you cannot touche in the world. Concepts, ideas...
+c#concrete  p#disjoin   c#abstract
+c#living    p#is    c#concrete
+c#living    c#comment   everything considered as living: plants and animals, basically
+c#lifespan  p#is    v#number
+c#lifespan  c#comment   the average number of days a living creature is expected to stay alive
+f#isOld p#located   living.isOld
+f#isOld 1   v#number
+c#living    f#isOld c#lifespan

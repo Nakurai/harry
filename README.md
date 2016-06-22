@@ -4,7 +4,7 @@ Warning
 -------------------------------
 
 The project use a json file to load information about french words. As this file isvery big, I couldn't upload it with everything else, so feel free to contact me if you want to kwow more about it.
-The source of this file is located here: [INRIA lefff](http://alpage.inria.fr/~sagot/lefff.html)), but I have reformatted it and kept only the relevant part for my project, which could be useful for other people.
+The source of this file is located here: [INRIA lefff](http://alpage.inria.fr/~sagot/lefff.html), but I have reformatted it and kept only the relevant part for my project, which could be useful for other people.
 
 Purpose
 -------------------------------
